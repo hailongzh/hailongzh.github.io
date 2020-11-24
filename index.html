@@ -28,13 +28,15 @@
           <div class="w3-white w3-text-grey w3-card-4">
             <div class="w3-display-container w3-center">
               <img src="static/hailongzhang-formal.jpeg" 
-                style="width: 190px;height: 200px;" alt="HailongZhang Photo" />
-              <br>
-              <br>
-              <br>              
-              <div class="w3-display-bottomleft w3-container w3-text-black w3-center">
-                <h2 style="text-align: right;">Hailong Zhang</h2>
+                style="width: 190px;height: 200px;" alt="HailongZhang Photo" />                          
+              <!--
+              <div class="w3-display-bottomleft w3-container w3-text-black w3-center" >
+                <h2 style="text-align:center;color:black;" >Hailong Zhang</h2>
               </div>
+              -->
+            </div>
+            <div class="w3-display-container w3-center">
+                <h2 style="text-align:center;color:black;" >Hailong Zhang</h2>              
             </div>
             <div class="w3-container">
               <p>
@@ -86,6 +88,15 @@
                   50%
                 </div>
               </div>
+              <p>JavaScript</p>
+              <div class="w3-light-grey w3-round-xlarge w3-small">
+                <div
+                  class="w3-container w3-center w3-round-xlarge w3-teal"
+                  style="width: 50%"
+                >
+                  50%
+                </div>
+              </div>
               <p>HTML/CSS</p>
               <div class="w3-light-grey w3-round-xlarge w3-small">
                 <div
@@ -120,13 +131,28 @@
                   style="width: 80%"
                 >80%</div>
                 
-              </div>
-              
-              <br />
+              </div>              
+              <br />              
             </div>
           </div>
           <br />
+          <h1 id="time" style="text-align: center;" class="w3-opacity"></h1>
 
+          <script>
+            setInterval(myFunction, 1000);
+
+            function myFunction() {
+            let d = new Date();
+            document.getElementById("time").innerHTML=
+            d.getHours()+":"+
+            d.getMinutes()+":"+
+            d.getSeconds()+ "  "+
+            (Number(d.getMonth())+1) +"-"+
+            d.getDate()+ "-"+
+            d.getFullYear();
+      
+            }
+          </script>
           <!-- End Left Column -->
         </div>
 
@@ -249,7 +275,16 @@
               <hr />
             </div>
             <div class="w3-container">
-              <h5 class="w3-opacity"><b>China Agricultural University </b></h5>
+              <h5 class="w3-opacity"><b>Renmin University of China</b></h5>
+              <h6 class="w3-text-teal">
+                <i class="fa fa-calendar fa-fw w3-margin-right"></i>2008 - 2012
+              </h6>
+              <p>Master Degree of Finance Engineering</p>
+             
+              <hr />
+            </div>
+            <div class="w3-container">
+              <h5 class="w3-opacity"><b>China Agricultural University</b></h5>
               <h6 class="w3-text-teal">
                 <i class="fa fa-calendar fa-fw w3-margin-right"></i>2002 - 2005
               </h6>
